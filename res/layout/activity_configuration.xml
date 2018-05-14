@@ -1,0 +1,192 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ConfigurationActivity" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/configurationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/config_title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/competitionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/configurationTitle"
+            android:text="@string/config_competition_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_marginTop="8dp"/>
+        
+		<EditText
+            android:id="@+id/competitionNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/competitionTitle"
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_marginLeft="10dp"
+            android:inputType="textCapCharacters"
+            android:ems="10" >
+            <!-- <requestFocus />  -->
+        </EditText>
+       
+        <EditText
+            android:id="@+id/registrationNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/competitionNo"
+            android:layout_toRightOf="@+id/textView7"
+            android:layout_marginLeft="10dp"
+            android:inputType="textCapCharacters"
+            android:ems="10" />
+
+        <CheckBox
+            android:id="@+id/locationSharingEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/registrationNo"
+            android:text="@string/config_competition_location_sharing" />
+        
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/locationSharingEnabled"
+            android:text="@string/title_activity_proximity_display"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/versionDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView4"
+            android:text="@string/config_proximity_items_types" />
+
+        <CheckBox
+            android:id="@+id/peaksCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/versionDate"
+            android:text="@string/config_proximity_items_habitable" />
+        
+        <CheckBox
+            android:id="@+id/habitableCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/peaksCheckBox"
+            android:text="@string/config_proximity_items_peaks" />
+        
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/habitableCheckBox"
+            android:text="@string/config_num_proximity_items_num" />
+
+        <com.ibisek.outlanded.components.EditText2
+            android:id="@+id/numProximityItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView5"
+            android:ems="10"
+            android:inputType="number" />
+        
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/numProximityItems"
+            android:text="@string/config_num_proximity_items_note" />
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/smsFilteringEnabled"
+            android:layout_marginTop="8dp"
+            android:text="@string/config_sms_sender_type"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.ibisek.outlanded.components.IbiSpinner
+            android:id="@+id/smsSenderSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/smsSenderSpinner"
+            android:text="@string/config_sms_sender_text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/cmTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView6"
+            android:text="@string/config_sms_receiver_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_marginTop="8dp"
+            />
+
+        <CheckBox
+            android:id="@+id/smsFilteringEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cmTitle"
+            android:text="@string/config_sms_receiver_enabled" />
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/registrationNo"
+            android:text="@string/config_competition_reg_no"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/competitionNo"
+            android:text="@string/config_competition_no"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </RelativeLayout>
+
+</ScrollView>

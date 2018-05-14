@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_template_configuration"
+        android:icon="@drawable/ic_templace_config"
+        android:orderInCategory="100"
+        android:title="@string/action_template_config"/>
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_map"
+        android:orderInCategory="100"
+        android:title="@string/action_map"/>
+    <item
+        android:id="@+id/action_sms_list"
+        android:icon="@drawable/ic_sms_list"
+        android:orderInCategory="100"
+        android:title="@string/action_sms_list"/>
+    <item
+        android:id="@+id/action_configuration"
+        android:icon="@drawable/ic_configuration"
+        android:orderInCategory="100"
+        android:title="@string/action_configuration"/>
+    <item
+        android:id="@+id/action_update"
+        android:icon="@drawable/ic_update"
+        android:orderInCategory="100"
+        android:title="@string/about_update_button_check"/>
+    <item
+        android:id="@+id/action_about"
+        android:icon="@drawable/ic_about"
+        android:orderInCategory="100"
+        android:title="@string/action_about"/>
+
+</menu>

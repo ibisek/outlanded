@@ -1,0 +1,31 @@
+
+Latitude = N 49...
+Longitude = E 16 ..
+
+mdpi = 48
+hdpi = 72
+xhdpi = 96
+xxhdpi = 144
+
+
+telnet localhost 5554
+	geo fix 13.24 52.31
+	sms send 5554 "pokusna sms N49.3682058 E16.1144450"
+	sms send 5554 "AF hlasi pristani na N49.3682058 E16.1144450"
+
+http://stackoverflow.com/questions/4967448/send-sms-in-android
+http://stackoverflow.com/questions/7330165/how-to-access-contacts-in-my-android-program
+
+Jak namalovat macovske ikonky:
+	https://www.youtube.com/watch?v=bSGGZ9zw5BU
+
+
+keystore:
+	C:\Program Files (x86)\Java\jre6\lib\security\cacerts
+	C:\Program Files (x86)\Java\jdk1.6.0_41\jre\lib\security\cacerts
+	changeit
+
+Proguard (obfuscovani):
+	https://developer.android.com/tools/help/proguard.html
+	
+	

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ibisek.outlanded"
+    android:versionCode="1"
+    android:versionName="2" 
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />	
+    <uses-permission android:name="android.permission.INTERNET" />				<!-- update check -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />			<!-- SMS receiver -->
+    <uses-permission android:name="android.permission.READ_SMS" />				<!-- SMS receiver -->
+    <uses-permission android:name="android.permission.VIBRATE"/>				<!-- SMS receiver notification -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- for error log -->
+    <uses-permission android:name="android.permission.READ_LOGS" />				<!-- for error log -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/outlanded"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ibisek.outlanded.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ibisek.outlanded.TemplateConfigurationActivity"
+            android:label="@string/title_activity_configuration" >
+        </activity>
+        <activity
+            android:name="com.ibisek.outlanded.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.ibisek.outlanded.ConfigurationActivity"
+            android:label="@string/title_activity_configuration" >
+        </activity>
+        <activity
+            android:name="com.ibisek.outlanded.ProximityDisplayActivity"
+            android:label="@string/title_activity_proximity_display" >
+        </activity>
+        <activity
+            android:name="com.ibisek.outlanded.PhonebookActivity"
+            android:label="@string/title_activity_phonebook" >
+        </activity>
+
+        <receiver
+            android:name="com.ibisek.outlanded.smsReceiver.SmsReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.provider.Telephony.SMS_DELIVER_ACTION" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED_ACTION" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ibisek.outlanded.SmsListActivity"
+            android:label="@string/title_activity_sms_list" >
+        </activity>
+        
+        <service 
+            android:name="com.ibisek.outlanded.smsReceiver.BeepingService" >
+        </service>
+        <service
+            android:name="com.ibisek.outlanded.err.LogSenderService" >
+        </service>
+        
+    </application>
+
+</manifest>

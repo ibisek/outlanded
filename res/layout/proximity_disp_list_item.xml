@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:paddingBottom="6dip">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/secondLine"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/compass" />
+
+    <ImageView
+        android:id="@+id/sizeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/firstLine"
+        android:gravity="center_vertical"
+		android:layout_marginRight="4dip"
+        android:src="@drawable/size_1_house"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sizeIcon"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/secondLine"
+        android:layout_alignWithParentIfMissing="true"
+        android:gravity="center_vertical"
+        android:text="Velke Mezirici"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/firstLine"
+        android:layout_toLeftOf="@id/icon"
+        android:singleLine="true"
+        android:text="2.5km, Az: 250st. To: 25->"
+        android:textSize="16sp" />
+    
+</RelativeLayout>

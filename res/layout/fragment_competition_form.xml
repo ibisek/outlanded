@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.ibisek.outlanded.components.EditText2
+        android:id="@+id/competitionNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:ems="10" 
+        android:text="@string/competition_no">
+        <requestFocus />
+    </com.ibisek.outlanded.components.EditText2>
+
+    <com.ibisek.outlanded.components.EditText2
+        android:id="@+id/registrationNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/competitionNo"
+        android:ems="10"
+        android:text="@string/competition_reg_no"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/registrationNo" >
+        
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/btn_skip" />
+    
+	<Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/btn_save" />
+
+    
+    </LinearLayout>
+
+
+</RelativeLayout>

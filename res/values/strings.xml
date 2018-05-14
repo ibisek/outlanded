@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Outlanded</string>
+
+    <!-- menu -->
+    <string name="action_template_config">Template Configuration</string>
+    <string name="action_map">Show on map</string>
+    <string name="action_configuration">App Config</string>
+    <string name="action_about">About</string>
+    <string name="action_back">Back</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sms_list">Received SMS</string>
+
+    <!-- buttons -->
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_setting">Settings</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_skip">Skip</string>
+    
+    <!-- forms general -->
+    <string name="form_err_missing_or_wrong_value">Missing or wrong value!</string>
+
+    <!-- gps -->
+    <string name="gps_settings_title">GPS settings</string>
+    <string name="gps_settings_dlg_text">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="gps_format_title">GPS format</string>
+    <string name="gps_no_gps_fix">No GPS fix</string>
+    <string name="directionMarkers">N,NE,E,SE,S,SW,W,NW</string>
+
+    <!-- SmsSender -->
+    <string name="sms_sent">SMS sent</string>
+    <string name="sms_delivered">SMS delivered</string>
+
+    <!-- main activity -->
+    <string name="title">Current position:</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="altitude">altitude </string>
+    <string name="altitudeUnits">m AMSL</string>
+    <string name="sendMsg">Send message</string>
+    <string name="sendMsgMethod">Method selection</string>
+    <string name="sendMsgMethod1">SMS</string>
+    <string name="sendMsgMethod2">email</string>
+    <string name="sendMsgMethod3">some other way</string>
+    <string name="selectContact">select contact</string>
+    <string name="main_no_contact_selected">Invalid or no contact number selected.</string>
+    <string name="location">nearest dwelling (experimental)</string>
+    <string name="locationFormatScreen" formatted="false">UR %.2fkm to %s from %s</string>
+    <string name="locationFormatSMS" formatted="false">%.2fkm to %s from %s</string>
+
+    <!-- template configuration activity -->
+    <string name="title_activity_configuration">Configuration</string>
+    <string name="template_config_title">Message Templates</string>
+    <string name="template_config_addBtn">add new template</string>
+    <string name="template_config_removeBtn">remove template</string>
+    <string name="template_help">New template. Place square brackets [] on place where you wish to insert GPS coordinates and/or {} where position. () will contain your competition number.</string>
+    <string name="template_default_1">Hi, no way to make it home again. Landed in field on [] {} Come to pick me up, please!:)</string>
+    <string name="template_default_2">() reports field-landing {} on coordinates [].</string>
+    <string name="template_default_3">The field entryway is here: [].</string>
+    <string name="template_created">New template created.</string>
+    <string name="template_removed">Template has been removed.</string>
+
+    <!-- about activity -->
+    <string name="title_activity_about">About</string>
+    <string name="about_description">Tool for glider pilots who could not make it back home and landed in a field.</string>
+    <string name="about_author">Author: </string>
+    <string name="about_version">Version: </string>
+    <string name="about_version_text">competition</string>
+    <string name="about_version_date">[version]</string>
+    <string name="about_url_text">This app can be freely downloaded and installed from</string>
+    <string name="about_url">ibisek.com/outlanded</string>
+    <string name="about_update_button_check">Check for updates</string>
+    <string name="about_update_button_hint">(internet access required)</string>
+    <string name="about_proximity_display_title">Proximity Display</string>
+    <string name="about_proximity_display_text">is a list of places on map in your vicinity.\n\nThe CS version contains offline database of Czech Republic and Slovakia with reasonable margin to surrounding countries.\n\nThe big edition contains offline database for Czech Republic, Slovakia, Austria, Poland, Germany, Sweden, Switzerland, Spain, Finland, France, Italy, Norway, Portugal, United Kingdom and Hungary.\n\nOther countries can be added upon request.</string>
+
+    <!-- update messages on about activity -->
+    <string name="update_dialog_title">Update</string>
+    <string name="update_busy_dialog_text">Querying our server..</string>
+    <string name="update_download_message">A more recent release is available!</string>
+    <string name="update_button_download">Download now</string>
+    <string name="update_button_cancel">Later</string>
+    <string name="update_not_needed">Good news, we are up to date.</string>
+    <string name="update_failed">No network or server down.</string>
+    <string name="update_available_toast">There is new version available.</string>
+
+    <!-- configuration activity -->
+    <string name="config_title">System Configuration</string>
+    <string name="config_competition_title">Competition Mode</string>
+    <string name="config_competition_no">Competition No\n(e.g. XY)</string>
+    <string name="config_competition_reg_no">Registration No\n(e.g. OK-1234)</string>
+    <string name="config_competition_location_sharing">enable landing location sharing</string>
+    <string name="config_sms_sender_type">SMS Sender Type</string>
+    <string name="config_sms_sender_text">Use VIA_INTENT when VIA_MANAGER does not work.</string>
+    <string name="config_num_proximity_items_num">Number of records it the proximity list:</string>
+    <string name="config_num_proximity_items_note">(applies after application restart)</string>
+    <string name="config_num_proximity_items_msg">Be reasonable :)</string>
+    <string name="config_proximity_items_types">Items in proximity list:</string>
+    <string name="config_proximity_items_peaks">peaks, hills and mountains</string>
+    <string name="config_proximity_items_habitable">hamlets, towns and cities</string>
+    <string name="config_proximity_no_items_selected">WARNING! You will see nothing unless you select at least one item.</string>
+    <string name="config_sms_receiver_title">SMS Receiver</string>
+    <string name="config_sms_receiver_enabled">filter incoming messages</string>
+
+    <!-- proximity display -->
+    <string name="title_activity_proximity_display">Proximity Display</string>
+    <string name="proximity_display_line2_template" formatted="false">%.2fkm bearing %.0f°</string>
+    <string name="proximity_display_line1_default_text">Wait for GPS fix ..</string>
+    <string name="proximity_display_line2_default_text">or until something is found :)</string>
+
+    <!-- phonebook activity -->
+    <string name="title_activity_phonebook">Recently used contacts</string>
+    <string name="phone_book_item0_line1">Pick a contact</string>
+    <string name="phone_book_item0_line2">from you phonebook</string>
+    
+    <!-- sms list activity -->
+    <string name="title_activity_sms_list">Received Messages</string>
+    <string name="sms_list_no_messages ">No messages to read</string>
+    <string name="sms_list_no_app">No map or navigation app available</string>
+    
+    <!-- intial competition form -->
+    <string name="competition_no">Competition number (e.g. XY)</string>
+    <string name="competition_reg_no">Registration number (e.g. OK-1234)</string>
+    
+
+</resources>

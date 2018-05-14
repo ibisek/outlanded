@@ -1,0 +1,10 @@
+
+Create build.xml:
+
+	android update project --path d:\prog\android\Outlanded
+
+Building using ant:
+
+	https://developer.android.com/tools/building/building-cmdline.html
+
+

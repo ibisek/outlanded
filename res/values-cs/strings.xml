@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">V poli</string>
+
+    <!-- menu -->
+    <string name="action_template_config">Nastavení šablon</string>
+    <string name="action_map">Ukaž na mapě</string>
+    <string name="action_configuration">Konfigurace</string>
+    <string name="action_about">O aplikaci</string>
+    <string name="action_back">Back</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="action_sms_list">Přijaté SMS</string>
+    
+    <!-- buttons -->
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Zrušit</string>
+    <string name="btn_setting">Nastavení</string>
+    <string name="btn_save">Uložit</string>
+    <string name="btn_skip">Přeskočit</string>
+    
+    <!-- forms general -->
+    <string name="form_err_missing_or_wrong_value">Chybějící nebo špatná hodnota!</string>
+    
+    <!-- gps -->
+    <string name="gps_settings_title">Nastavení GPS</string>
+    <string name="gps_settings_dlg_text">GPS není aktivní. Chceš to změnit?</string>
+    <string name="gps_format_title">Formát GPS</string>
+    <string name="gps_no_gps_fix">Počkej na GPS fix</string>
+    <string name="directionMarkers">S,SV,V,JV,J,JZ,Z,SZ</string>
+
+    <!-- SmsSender -->
+    <string name="sms_sent">SMS odeslána</string>
+    <string name="sms_delivered">SMS doručena</string>
+
+    <!-- main activity -->
+    <string name="title">Aktuální pozice:</string>
+    <string name="latitude">zem. šířka</string>
+    <string name="longitude">zem. délka</string>
+    <string name="altitude">nadm. výška </string>
+    <string name="altitudeUnits">m AMSL</string>
+    <string name="sendMsg">Pošli zprávu</string>
+    <string name="sendMsgMethod">Vyber způsob</string>
+    <string name="sendMsgMethod1">SMS</string>
+    <string name="sendMsgMethod2">email</string>
+    <string name="sendMsgMethod3">jinak</string>
+    <string name="selectContact">vyber kontakt</string>
+    <string name="main_no_contact_selected">Žádné nebo špatné telefonní číslo.</string>
+    <string name="location">nejbližší dědina (experimental)</string>
+    <string name="locationFormatScreen" formatted="false">Jsi %.2fkm na %s od %s</string>
+    <string name="locationFormatSMS" formatted="false">%.2fkm na %s od %s</string>
+    
+    <!-- template configuration activity -->
+    <string name="title_activity_configuration">Nastavení</string>
+    <string name="template_config_title">Šablony zpráv</string>
+    <string name="template_config_addBtn">přidat novou</string>
+    <string name="template_config_removeBtn">smazat</string>
+    <string name="template_help">Nová šablona. Na místo, kam umístit GPS souřadnice, vlož [] a pro aktuální pozici použij {}. Místo () bude tvůj soutěžní znak.</string>
+    <string name="template_default_1">Ahoj, opet jsem v poli {}. Souradnice jsou [] Prijed pro me, prosim :)</string>
+    <string name="template_default_2">() hlasi pristani do pole {} na souradnicich [].</string>
+    <string name="template_default_3">Vjezd na pole je zde: [].</string>
+    <string name="template_created">Byla vytvořena nová šablona.</string>
+    <string name="template_removed">Šablona byla odebrána.</string>
+
+    <!-- about activity -->
+    <string name="title_activity_about">O aplikaci</string>
+    <string name="about_description">Nástroj pro přivolání transportního družstva pro nešťastné piloty, nad kterými se termoska už nesmiloval a proti své vůli přistáli do pole.</string>
+    <string name="about_author">Autor: </string>
+    <string name="about_version">Verze: </string>
+    <string name="about_version_text">competition</string>
+    <string name="about_version_date">[verze]</string>
+    <string name="about_update_button_check">Zkontroluj aktualizace</string>
+    <string name="about_update_button_hint">(potřebuje připojení na internet)</string>
+    <string name="about_url_text">Tato aplikace k volnému ke stažení a použití zde:</string>
+    <string name="about_url">ibisek.com/outlanded</string>
+	<string name="about_proximity_display_title">Proximity Display</string>
+    <string name="about_proximity_display_text">ukazuje místa v blízkém okolí.\n\nCS verze obsahuje offline databázi pro Českou republiku a Slovensko včetně rozumného příhraničí, kde by našinec na přeletu mohl ještě přistát.\n\nVelká verze obsahuje offline databázi pro Českou republiku, Slovensko, Rakousko, Polsko, Německo, Švédsko, Švýcarsko, Španělsko, Finsko, Francii, Itálii, Norsko, Portugalsko, Anglii a Maďarsko.\n\nDalší země je možné přidat na požádání.</string>
+    
+    <!-- update messages on about activity -->
+    <string name="update_dialog_title">Aktualizace</string>
+    <string name="update_busy_dialog_text">Vyzvídám na serveru..</string>
+    <string name="update_download_message">Nová verze je ke stažení!</string>
+    <string name="update_button_download">Stáhnout</string>
+    <string name="update_button_cancel">Teď ne</string>
+    <string name="update_not_needed">Dobrá zpráva, aktualizace není třeba.</string>
+    <string name="update_failed">Síť nebo server jsou nedostupné.</string>
+    <string name="update_available_toast">K dispozici je novější verze.</string>
+    
+    <!-- configuration activity -->
+    <string name="config_title">Konfigurace systému</string>
+	<string name="config_competition_title">Na závodech</string>
+    <string name="config_competition_no">Závodní znak\n(např. XY)</string>
+    <string name="config_competition_reg_no">Poznávací znak\n(např. OK-1234)</string>
+    <string name="config_competition_location_sharing">povolit sdílení místa přistání</string>
+    <string name="config_sms_sender_type">Způsob odesílaní SMS</string>
+    <string name="config_sms_sender_text">Použij VIA_INTENT když VIA_MANAGER nefunguje.</string>
+    <string name="config_num_proximity_items_num">Počet položek na seznamu blízkých míst:</string>
+    <string name="config_num_proximity_items_note">(projeví se až po restartu aplikace)</string>
+    <string name="config_num_proximity_items_msg">Ale no tak! :)</string>
+    <string name="config_proximity_items_types">Položky na seznamu:</string>
+    <string name="config_proximity_items_peaks">vrcholky, kopce a hory</string>
+    <string name="config_proximity_items_habitable">dědinky, městečka a města</string>
+    <string name="config_proximity_no_items_selected">POZOR na to! Takto se nic nezobrazí, dokud nevybereš alespoň jednu položku.</string>
+    <string name="config_sms_receiver_title">SMS filtr</string>
+    <string name="config_sms_receiver_enabled">zachytávat příchozí zprávy</string>
+    
+    <!-- proximity display -->
+    <string name="title_activity_proximity_display">Proximity Display</string>
+    <string name="proximity_display_line2_template" formatted="false">%.2fkm bearing %.0f°</string>
+	<string name="proximity_display_line1_default_text">"Počkej na GPS fix .."</string>
+    <string name="proximity_display_line2_default_text">"nebo až něco najdeme :)"</string>
+	
+	
+    <!-- phonebook activity -->
+    <string name="title_activity_phonebook">Naposledy použité kontakty</string>
+    <string name="phone_book_item0_line1">Vyber kontakt</string>
+    <string name="phone_book_item0_line2">ze seznamu telefonu</string>
+    
+    <!-- sms list activity -->
+    <string name="title_activity_sms_list">Přijaté zprávy</string>
+    <string name="sms_list_no_messages ">Žádné přijaté zprávy</string>
+    <string name="sms_list_no_app">Nelze najít mapovou nebo navigační aplikaci</string>
+    
+    <!-- intial competition form -->
+    <string name="competition_no">Závodní znak (např. XY)</string>
+    <string name="competition_reg_no">Poznávací znak (např. OK-1234)</string>
+
+</resources>
